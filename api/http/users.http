@@ -1,0 +1,12 @@
+### GET request with environment variables
+GET {{host}}/users/test@gmail.com
+Accept: application/json
+
+### Send POST request with json body
+POST {{host}}/users/
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+  "password": "secret"
+}

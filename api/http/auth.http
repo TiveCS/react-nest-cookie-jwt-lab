@@ -1,0 +1,12 @@
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+  "password": "secret"
+}
+
+### GET request with a header
+GET {{host}}/auth/check
+Accept: application/json
+Cookie: access_token=<yourTokenHere>
